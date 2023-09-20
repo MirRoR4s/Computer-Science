@@ -7,3 +7,5 @@
 ### CS50
 [CS50](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/CS50/)
 1. While C only runs your lines of code, Python runs all the code that comes under the hood with it when you call Python’s built-in functions.
+2. It’s possible to have certain types of values not only have properties or attributes inside of them but have functions as well. In Python, these values are known as objects
+3. Notice that the meow function abstracts away the print statement
