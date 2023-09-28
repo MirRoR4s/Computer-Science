@@ -1,5 +1,7 @@
 
 
+- 地址：https://www.coursera.org/learn/programming-fundamentals/home/week/1
+
 ## The First Four Steps
 
 ### Step 3: Generalize Your Steps
@@ -604,3 +606,184 @@ corner cases in a more sophisticated manner.
 
 ---
 
+### Algorithm Pratice
+
+**问题一：**
+
+1. s = N * 3
+2. s,s+2,s+4,s+6,.....s+2n(n=0,1,2,3,N*2+2)
+
+N=6
+
+s=18
+
+18,20,22,24,26,28,30,32,34,36,38,40,42,44
+
+**问题二：**
+
+N=0
+
+0,0 red
+
+0,1 red
+
+1,1 green
+
+N=1
+
+0,0 red
+
+0,1 red
+
+1,1 red
+
+1,2 red
+
+3,1 blue
+
+3,3 blue
+
+N=2
+
+0,0 red
+
+0,1 red
+
+1,1 red
+
+1,2 red
+
+2,2 red
+
+2,3 red
+
+3,3 green
+
+1. 从零数到N（包括），记为x
+2. 从x数到x+1（包括），记为y
+3. 在(x,y) 处绘制红色方块
+4. 如果 N 是奇数，在(N+2,N-2)和(N+2,N)处绘制蓝色方块
+5. 如果N是偶数，在(N+1,N+1)处绘制绿色方块
+
+N=6
+
+00 01 11 12 22 23 33 34 44 45 55 56 66 67 红色
+
+77 绿色
+
+**问题3**
+
+1. N=0，输出空
+2. 否则将输出2N项，前N项是0,2,4,6,...2i-2(i=1,2,3,4,5,...N)后N项是N+0,N+1,....N+i(i=0,2,3,4,5,..N-1)
+
+N=6
+
+0,2,4,6,8,10,6,7,8,9,10,11
+
+## Review
+
+### Algorithm
+
+**问题一**
+
+1. 从N数到零，记为x，同时从零数到N，记为y，同时
+2. (x,y) 处绘制红色方块
+3. 如果y+1是奇数，在(x,y+1)处绘制蓝色方块，否则子啊（x,y+1)处绘制绿色方块
+4. 在（N+1,0)处绘制一个绿色方块
+
+N=3
+
+30 21 
+
+**问题三**
+
+记 -N^2 为 x
+
+输出序列如下
+
+x,（x）+1,(x+1)+3,(x+1+3)+5
+
+a0=-n^2
+
+a1=a0+(2i-1) i=1,2,3,4,5,...3n
+
+$a_i=a_{i-1}+2i-1$
+
+```
+N=6
+a0=-(N**2)
+num = [a0]
+for i in range(1,3*N):
+    tmp = a0 + (2*i-1)
+    num.append(tmp)
+    a0 = tmp
+a = (str(num).replace('[','').replace(']','').replace(',',''))
+print(a)
+assert len(num) == 3*N
+
+```
+
+### Next Setps
+
+至此，您应该对开发简单算法的思想有了基本的了解。 At this point, you should have a basic grasp on the idea of developing simple algorithms.  
+
+在阅读本书的其余部分时，您将练习这项技能，因为每个编程问题的关键组成部分都是找出正确的算法。  This skill is one that you will practice as you go through the rest of this book, as every programming problem's key component is figuring out the correct algorithm.  
+
+按部就班地解决问题的重要性，我们再怎么强调也不为过。  We cannot underscore enough the importance of working through problems in a step-by-step fashion.  
+
+许多新手程序员试图跳过最初的几个步骤，直接开始编写代码。  Many novice programmers try to skip over the first several steps and plunge right into writing code.  
+
+结果往往是一场灾难，他们最终花费的时间要比一开始就正确规划的时间多得多。The result is frequently a disaster, which they end up spending orders of magnitude more time trying to fix than they would have spent planning correctly in the first place.
+
+新手程序员直接跳到第5步的原因各不相同，但一个常见的原因是“第3步(编写通用算法)似乎太难了。” The reasons that novice programmers give for skipping straight to step 5 vary, but a common one is "Step 3 (writing a generalized algorithm) seemed too hard." 
+
+这个理由很可能是跳过步骤 3 的最糟糕的理由——如果制定正确的计划被证明是困难的，没有计划你怎么可能希望写出正确的代码呢?  This reason is quite possibly the worst reason to skip over step 3—if making a correct plan is proving hard, how can you possibly hope to write correct code without the plan? 
+
+最好在更多示例中重复步骤1和步骤2，直到找到模式并写下算法。  It is better to repeat steps 1 and 2 on more examples until you can find the pattern and write down the algorithm.  
+
+程序员新手跳过第一步的另一个常见原因是“为了节省时间”;  Another common reason that novice programmers give for skipping the first steps is "to save time"; 
+
+然而，他们经常报告说，他们花了无数个小时试图调试结果代码。  however, they often then report spending countless hours trying to debug the resulting code.  
+
+十分钟甚至三十分钟的计划是非常值得的，这样可以避免花几个小时去调试一个毫无希望的烂摊子!
+  It is well worth ten or even thirty minutes of planning to avoid trying to debug a hopeless mess for multiple hours!
+
+当你在这个过程中越来越熟练时，你可能会发现步骤1-4很自然，你可以在脑子里做，而不用写下来——就像学习基本的数学技能一样。 As you become more and more practiced at this process, you may find that steps 1–4 come naturally, and you can do them in your head without writing them down—much like what happens with basic mathematical skills. 
+
+当您的编程技能得到这些改进时，只要您确信自己的操作是正确的，那么在头脑中执行更简单的步骤就没有错。  When these improvements in your programming skills happen, then there is nothing wrong with doing the easier steps in your head, as long as you are sure that you are doing them correctly. 
+
+然而，每当您在能力极限处进行编程时，就需要经历这些步骤—因此，即使您变得更加熟练，记住整个过程是如何工作的也是非常重要的。
+
+However, whenever you are programming at the boundaries of your abilities, you will need to go through these steps—so it is quite important to remember how the full process works even as you become more skilled.
+
+我们将从这里开始，首先学习一些关于用C阅读代码的知识，然后再继续学习更多关于编写代码的知识。 
+
+We will continue from here by first learning a bit about reading code in C, before we continue on to more about writing code. 
+
+通过阅读代码，我们的意思是能够准确地理解一段代码的作用，一步一步地手动执行它。  
+
+By reading code, we mean being able to understand exactly what a piece of code does, executing it step-by-step by hand. 
+
+这项技能之所以重要，有三个原因。  
+
+This skill is important for three reasons. 
+
+首先，当你不能阅读时，你很难写作。 
+
+First, it is very difficult to write when you cannot read. 
+
+阅读代码将是绘制和更新图表的问题，这些图表反映了代码执行时程序的状态。  
+
+Reading the code will be a matter of drawing and updating diagrams which reflect the state of the program as the code executes. 
+
+编写代码就是编写语法，以实现对程序状态的适当转换(如算法中说明的那样)。  
+
+Writing code will be a matter of writing the syntax to effect the appropriate transformations—as spelled out in the algorithm—to the program's state. 
+
+其次，能够阅读代码对于能够调试代码至关重要。  
+
+Second, being able to read your code is crucial for being able to debug your code.  
+
+第三，你可能会在各种各样的环境中结束(例如，小组类项目，行业中的编码团队)，在这些环境中，你必须阅读和理解其他人的代码是做什么的，这样你才能处理它。  
+
+Third, you may end up in a variety of settings (e.g., group class projects, coding teams in industry) where you must read and understand what other people's code does so that you can work on it.
