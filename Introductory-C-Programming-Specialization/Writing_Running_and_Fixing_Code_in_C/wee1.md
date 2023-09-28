@@ -239,3 +239,160 @@ After we revisit Steps 1–4, we will continue on to Step 5, translating our alg
 在本模块结束时，视频书写 isPrime 将解决从步骤 1 到步骤 5 的整个问题。  
 
 At the end of this module, the video Writing isPrime will work an entire problem from Step 1 to Step 5.
+
+## More about Steps 1-4
+
+### Revisiting Step 1-Reading
+
+#### Work an Example Yourself
+
+设计算法的第一步是自己研究问题的实例。 
+
+The first step to devising an algorithm is to work an instance of the problem yourself.  
+
+如前所述，如果你不能解决这个问题，就不能指望编写算法来解决它，这就像试图向别人解释如何做一件你自己也不理解的事情。  
+
+As we discussed earlier, if you cannot do the problem, you cannot hope to write an algorithm to do it—that is like trying to explain to someone how to do something which you yourself do not understand how to do.  
+
+然而，你不仅要能够解决这个问题，而且要足够有条理地去解决，这样你就可以分析为了解决问题你所做的事情并对问题进行概括。
+
+However, you have to not only be able to do the problem, but also do it methodically enough that you can analyze what you did and generalize it.
+
+通常，独立解决问题的一个关键部分是描绘出问题及其解决方案。 
+
+Often, a key part of working the problem yourself is drawing a picture of the problem and its solution.  
+
+绘制一幅清晰而精确的图可以让你在处理问题时可视化它的状态。  
+
+Drawing a clear and precise picture allows you to visualize the state of the problem as you manipulate it. 
+
+对问题的状态有一个清晰的概念，以及你是如何处理它的，这将有助于你下一步的工作，在这一步中，你可以准确地写下你在这个问题的实例上做了什么。
+
+Having a clear idea of the state of the problem, and how you are manipulating it will help you with the next step, in which you write down precisely what you did on this instance of the problem.
+
+在本章余下的内容中，我们将以下面的问题为例:
+
+We will use the following problem as an example to work from for the rest of this chapter:
+
+给定两个矩形，计算表示它们交点的矩形。
+
+Given two rectangles, compute the rectangle which represents their intersection.
+
+你可以假设矩形是垂直的或水平的。
+
+You may assume the rectangles are vertical or horizontal.
+
+我们在这里应该做的第一件事是至少处理这个问题的一个实例(我们可能想要处理更多)。 
+
+The first thing we should do here is to work at least one instance of this problem (we may want to work more). 
+
+为此，我们需要一些领域知识——什么是矩形(有4条边的形状，使相邻边成直角)，它们的交点是什么(在两个矩形内的面积)。
+
+In order to do this, we need a bit of domain knowledge—what a rectangle is (a shape with 4 sides, such that adjacent sides are at right angles), and what their intersection is (the area that is within both of them).
+
+我们选择什么实例实际上是由我们自己决定的。 
+
+What instance we pick is really up to us.  
+
+对于某些问题，有些实例会比其他实例更容易让人洞察到问题，有些会暴露出边界情况——算法需要对该情况进行特别处理。  
+
+For some problems, some instances will be more insightful than others, and some will expose corner cases—inputs where our algorithm needs to behave specially.  
+
+在选择问题的特定实例时，最重要的规则是要选择一个你可以完全且精确地用手工解决的实例。  
+
+The most important rule in picking a particular instance of the problem is to pick one that you can work completely and precisely by hand.
+
+![image-20230928165509466](images/image-20230928165509466.png)
+
+求解矩形相交问题的一个例子
+
+**Working an example of the rectangle intersection problem**
+
+---
+
+上图显示了步骤1矩形相交问题的结果。 
+
+The figure above shows the results of Step 1 for the rectangle intersection problem.  
+
+我们选择了一个问题的实例——从 (-4,1) 到 (8,6) 的黄色阴影的矩形与从 (1，-1) 到 (4,7) 的蓝色阴影的矩形相交。  
+
+We picked an instance of the problem—here the yellow-shaded rectangle from (-4,1) to (8,6) intersecting with the blue-shaded rectangle from (1,-1) to (4,7).  
+
+结果是从 (1,1) 到 (4,6) 的绿色矩形。
+
+The resulting intersection is the green-shaded rectangle from (1,1) to (4,6).
+
+---
+
+关于这个例子，你应该注意几点。 
+
+You should note a few things about this example.  
+
+首先，虽然黄色/蓝色/绿色并不是问题的真正一部分，但在图表中添加额外的信息来帮助您理解发生了什么并没有错。  
+
+First, while the yellow/blue/green coloring is not truly a part of the problem, there is nothing wrong with adding extra information to your diagram to help you understand what is going on.  
+
+其次，注意这个图是精确绘制的——我们绘制了一个笛卡儿坐标网格，并把矩形放在了正确的坐标上。  
+
+Second, note that the diagram is done precisely—we drew a Cartesian coordinate grid, and placed the rectangles at their correct coordinates.  
+
+这种精确性不仅确保了我们从分析图表中获得的任何信息都是正确的，而不是草率绘图的结果(尽管某些关系是否通常是正确的，或我们选择的特定情况的结果，并不能通过仔细绘图来保证)。  
+
+This precision not only ensured that any information we obtained from analyzing our diagram was correct and not a result of sloppy drawing (though whether some relationship is generally true, or a consequence of the specific case we chose is not guaranteed by a careful drawing).  
+
+你通常不需要绘制绘图员级别的东西，但越精确越好。
+
+You typically do not need to draw things with draftsman-level precision, but the more precise you can be, the better.
+
+---
+
+在这种情况下，我们可以通过查看图片并留意绿色区域的位置来确定答案。 
+
+In this case, we can tell the answer just by looking at the picture and seeing where the green region is.  
+
+然而，要编写这样的程序，我们需要弄清楚其背后的数学原理，我们需要能够以某种方式解决这个问题，而不仅仅是看着图表看到答案。  
+
+However, to write a program to do this, we need to figure out the math behind it—we need to be able to work the problem in some way other than just looking at the diagram and seeing the answer.   
+
+有时候，当你只能看到答案时，尝试用数学方法解决问题是很困难的。  
+
+Sometimes trying work things mathematically is hard when you can just see the answer.  
+
+学习把显而易见的事情放在一边，思考发生了什么是需要学习的关键编程技能，但需要一些时间。
+
+Learning to put the obvious aside and think about what is going on is a key programming skill to learn, but takes some time.
+
+---
+
+如果你纠结于这个问题，解决这个问题的另一个例子可能是有用的，但排除额外的信息，让你在不理解的情况下直接找到答案。 
+
+If you struggle with it, it may be useful to work another instance of the problem, but eliminate extra information that lets you jump straight to the answer without understanding. 
+
+下图展示了矩形问题的另一个例子，去掉了笛卡尔网格(请注意，它仍然被绘制为矩形的大小和相对位置正确)。  
+
+The figure below shows a different instance of the rectangle problem with the Cartesian grid removed (note that it was still drawn such that the rectangles are the right size and in the correct relative positions).  
+
+我们仍然可以从这个图中精确地求解这个问题，但只看笛卡尔网格就能得到答案有点困难。  
+
+We can still precisely work the problem from this diagram, but it is a little harder to just look at the Cartesian grid and see the answer.  
+
+在继续之前，花点时间算出答案。  
+
+Take a second to work out the answer before you continue.
+
+![image-20230928170902497](images/image-20230928170902497.png)
+
+#### Another instance of the rectangle problem, with the Cartesian grid removed
+
+请注意，处理一些问题的实例，采取不同的方法，并在这样做的时候包含/排除各种额外的信息是没有错的。 
+
+Note that there is nothing wrong with working a few instances of the problem, taking different approaches as you do it, and including/excluding various extra information as you do so.   
+
+一般来说，在编程的早期阶段多花点时间总比在后期阶段陷入困境要好(如果真的陷入困境，你可能想回到早期阶段，用另一个问题实例重做一次)。  
+
+In general, it is better to spend extra time in an earlier step of programming than getting stuck in a later step (if you do get stuck, you might want to go back to an earlier step and redo it with another instance of the problem).  
+
+对于步骤1，做几个不同的问题的例子比进入步骤2时只想到“我刚才做了，这很明显”要好。  
+
+For Step 1, doing a few different instances of the problem is preferable to moving into Step 2 and only being able to come up with "I just did it—it was obvious."
+
