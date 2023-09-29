@@ -6,15 +6,25 @@
 
 ### Step 3: Generalize Your Steps
 
-概括步骤的第二种常见方法是寻找重复——相同的步骤反复重复。 The second common way to generalize steps is to find repetition—the same step repeated over and over.  
+概括步骤的第二种常见方法是寻找重复——相同的步骤反复重复。 
 
-通常模式重复的次数取决于参数。  Often the number of times that the pattern repeats will depend on the parameters.  
+The second common way to generalize steps is to find repetition—the same step repeated over and over.  
 
-我们必须概括出这些步骤要做多少次，以及这些步骤是什么。  We must generalize how many times to do the steps, as well as what the steps are. 
+通常模式重复的次数取决于参数。  
 
-有时，我们可能会发现有些步骤几乎是重复的，在这种情况下，我们可能需要调整我们的步骤，使它们完全重复。  Sometimes, we may find steps which are almost repetitive, in which case we may need to adjust our steps to make them exactly repetitive.  
+Often the number of times that the pattern repeats will depend on the parameters.  
 
-在3^4的例子中，我们的乘法步骤几乎是重复的——都用“某物”乘以x，但“某物”是变化的(3然后9然后27)。  In our  3^4  example, our multiplication steps are almost repetitive—both multiply  x  by "something," but that "something" changes (3 then 9 then 27).  
+我们必须概括出这些步骤要做多少次，以及这些步骤是什么。  
+
+We must generalize how many times to do the steps, as well as what the steps are. 
+
+有时，我们可能会发现有些步骤几乎是重复的，在这种情况下，我们可能需要调整我们的步骤，使它们完全重复。  
+
+Sometimes, we may find steps which are almost repetitive, in which case we may need to adjust our steps to make them exactly repetitive.  
+
+在3^4的例子中，我们的乘法步骤几乎是重复的——都用“某物”乘以x，但“某物”是变化的(3然后9然后27)。  
+
+In our  3^4  example, our multiplication steps are almost repetitive—both multiply  x  by "something," but that "something" changes (3 then 9 then 27).  
 
 更详细地检查这些步骤，我们将看到我们相乘的“某物”是前一步的答案。  Examining the steps in more detail, we will see that the "something" we multiply is the answer from the previous step. 
 
@@ -36,21 +46,35 @@
 
 我们需要对参数函数的特定值再做一次推广。 We need to make one more generalization of a specific value to a function of the parameters.  
 
-我们从n = 3开始;  We start with  n = 3; 
+我们从n = 3开始;  
 
-然而，我们并不总是希望从3开始。  however, we would not always want to start with  3.  
+We start with  n = 3; 
 
-一般情况下，我们想从n = x开始:  In the general case, we would want to start with  n = x:
+然而，我们并不总是希望从3开始。  
+
+however, we would not always want to start with  3.  
+
+一般情况下，我们想从 n = x 开始:  
+
+In the general case, we would want to start with  n = x:
 
 ![image-20230927143704291](images/image-20230927143704291.png)
 
-有时您可能会发现很难看到模式，因此很难概括这些步骤。 Sometimes you may find it difficult to see the pattern, making it hard to generalize the steps.  
+有时您可能会发现很难看到模式，因此很难概括这些步骤。 
 
-发生这种情况时，返回步骤1和步骤2可能会有所帮助。  When this happens, returning to Steps 1 and 2 may help. 
+Sometimes you may find it difficult to see the pattern, making it hard to generalize the steps.  
 
-对问题进行更多的实例分析将为您提供更多需要考虑的信息，可能会让您深入了解算法的模式。  Doing more instances of the problem will provide more information for you to consider, possibly giving you insight into the patterns of your algorithm. 
+发生这种情况时，返回步骤1和步骤2可能会有所帮助。  
 
-这个过程通常被称为编写“伪代码”，因为你正在以编程方式设计一个没有特定目标语言的算法。  This process is often referred to as writing 'pseudo-code', as you are working to design an algorithm programmatically with no particular target language. 
+When this happens, returning to Steps 1 and 2 may help. 
+
+对问题进行更多的实例分析将为您提供更多需要考虑的信息，可能会让您深入了解算法的模式。  
+
+Doing more instances of the problem will provide more information for you to consider, possibly giving you insight into the patterns of your algorithm. 
+
+这个过程通常被称为编写“伪代码”，因为你正在以编程方式设计一个没有特定目标语言的算法。
+
+This process is often referred to as writing 'pseudo-code', as you are working to design an algorithm programmatically with no particular target language. 
 
 几乎所有程序员在编写任何实际代码之前都使用这种方法来确保他们的算法是正确的。  Nearly all programmers make use of this method to ensure their algorithm is correct before writing any actual code.
 
@@ -76,15 +100,25 @@
 
 ---
 
-一种常见的错误是步骤3中的错误概括。 One common type of mistake is mis-generalizing in Step 3.  
+一种常见的错误是步骤3中的错误概括。 
 
-正如我们刚才讨论的，有人可能会认为这些步骤重复了x次因为x = 3而这些步骤重复了3次。  As we just discussed, one might think that the steps repeated  x  times because  x = 3  and the steps repeated 3 times.  
+One common type of mistake is mis-generalizing in Step 3.  
 
-如果我们在步骤3中写下来，我们的算法只会在x = y - 1时起作用;  If we had written that down in Step 3, our algorithm would only work when  x = y – 1; 
+正如我们刚才讨论的，有人可能会认为这些步骤重复了x次因为x = 3而这些步骤重复了3次。  
 
-否则我们就会数错次数，得到错误的答案。  otherwise we would count the wrong number of times and get the wrong answer.  
+As we just discussed, one might think that the steps repeated  x  times because  x = 3  and the steps repeated 3 times.  
 
-如果是这种情况，我们希望通过在步骤4中手工测试算法来检测这个问题。  If that were the case, we would hopefully detect the problem by testing our algorithm by hand in Step 4.  
+如果我们在步骤3中写下来，我们的算法只会在x = y - 1时起作用;  
+
+If we had written that down in Step 3, our algorithm would only work when  x = y – 1; 
+
+否则我们就会数错次数，得到错误的答案。  
+
+otherwise we would count the wrong number of times and get the wrong answer.  
+
+如果是这种情况，我们希望通过在步骤4中手工测试算法来检测这个问题。  
+
+If that were the case, we would hopefully detect the problem by testing our algorithm by hand in Step 4.  
 
 当我们发现这样的问题时，我们必须回过头来重新检查我们在步骤3中所做的概括。  When we detect such a problem, we must go back and re-examine the generalizations we made in Step 3.  
 
