@@ -2,7 +2,7 @@
 
 ## Linux Licensing Model
 
-欢迎回到Linux操作系统。 
+欢迎回到 Linux 操作系统。 
 
 Welcome back to the Linux operating system. 
 
@@ -10,7 +10,7 @@ Welcome back to the Linux operating system.
 
 In this lesson, we're going to drill into the Linux licensing model. 
 
-我们讨论了GNU GPL。  
+我们讨论了 GNU GPL。  
 
 We talked about the GNU GPL. 
 

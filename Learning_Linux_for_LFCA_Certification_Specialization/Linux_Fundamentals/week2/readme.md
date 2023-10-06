@@ -159,19 +159,19 @@ See you in the next lesson.
 
 ### Video: Web Servers
 
-欢迎回到Linux服务。 
+欢迎回到 Linux 服务。 
 
 Welcome back to Linux services. 
 
-这一课，我们将深入研究运行Linux服务器的一个非常具体和常见的服务Web服务器。  
+在这一课中，我们将深入研究一个运行在 Linux Web 服务器上的非常常见和具体的一个服务。  
 
 In this lesson, we're going to drill into a very specific and common service that's running Linux Servers Web Servers. 
 
-我在前面的模块中说过，90%的云运行在Linux服务器上。  
+我在前面的模块中说过，90% 的云运行在 Linux 服务器上。  
 
 I said earlier in a previous module that 90% of the cloud runs on Linux Servers. 
 
-很多web服务器，web服务器可以监听80或443端口，它们可以监听任何端口。  
+它们中有很多是 web 服务器，web 服务器可以监听80或443端口，它们可以监听任何端口。  
 
 And so a lot of those our web servers, So web servers sit and listen on either port 80 or 443, they can actually listen to any port. 
 

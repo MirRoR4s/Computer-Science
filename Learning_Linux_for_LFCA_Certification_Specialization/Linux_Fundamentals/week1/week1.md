@@ -81,43 +81,75 @@ Linux 基础是 Linux 基础专业的第一门课程。  Linux Fundamentals is t
 
 在第一课中，我们将思考 Linux 的历史。  In this first lesson, we're going to think about the history of Linux. 
 
-首先，什么是 Linux ?  First off, what is Linux? 
+首先，什么是 Linux ?  
 
-当我们说 Linux 时，我们指的是开源的类 unix 操作系统家族中许多特定发行版中的某一个。  When we say Linux, we mean one of many specific distributions in a family of open source Unix-like operating systems. 
+First off, what is Linux? 
 
-它们都基于 Linus Torvalds 开发的 Linux 内核。  They're all based on the Linux kernel that was developed by Linus Torvalds. 
+当提到 Linux 时，指的是开源的类 unix 操作系统家族中许多特定发行版中的某一个。 
 
-这些通常被捆绑在我们所谓的 Linux 发行版中。  These are typically bundled in what we call Linux distribution. 
+When we say Linux, we mean one of many specific distributions in a family of open source Unix-like operating systems. 
 
-我们将在这个模块中讨论这些术语。  We'll talk about all these terms through this module. 
+它们都基于 Linus Torvalds 开发的 Linux 内核。  
 
-不要对我刚才说的那些有意义的东西感到有压力，我们马上就会讲到。  Don't stress a lot of what I just said that make sense, we're going to get there. 
+They're all based on the Linux kernel that was developed by Linus Torvalds. 
 
-Linux 最初是为个人计算机开发的，它是 X86 架构。  Linux was originally developed for the personal computer, which is the X86 architecture. 
+这些通常被捆绑在我们所谓的 Linux 发行版中。  
 
-这和我们现在用于 Windows 电脑和 Macintosh 电脑的架构是一样的。  That's the same architecture that we use for Windows machines, for Macintosh machines today. 
+These are typically bundled in what we call Linux distribution. 
 
-X86 是一种非常流行的用于家庭的架构。  Very popular architecture used in home. 
+我们将在这个模块中讨论这些术语。  
 
-然后它（Linux）被移植到许多其他平台。  It was then ported to many other platforms. 
+We'll talk about all these terms through this module. 
 
-典型的例子有互联网上的服务器，以及现在的云。  These are typically servers that are out in the Internet, in the Cloud today. 
+不要对我刚才说的那些有意义的东西感到有压力，我们马上就会讲到。  
 
-很成功。  Very successful. 
+Don't stress a lot of what I just said that make sense, we're going to get there. 
 
-安卓系统也使用 Linux。  It's also used in Android. 
+Linux 最初是为个人计算机开发的，它是 X86 架构。  
 
-安卓是谷歌的智能手机，它至少占据了智能手机市场的一半，使用的是 Linux 。  Android, which is google smartphone, which has at least half of the smartphone market, uses Linux. 
+Linux was originally developed for the personal computer, which is the X86 architecture. 
 
-chromebook，从谷歌那里再次流行起来。  Chromebooks, which had become very popular again from Google. 
+这和我们现在用于 Windows 电脑和 Macintosh 电脑的架构是一样的。  
+
+That's the same architecture that we use for Windows machines, for Macintosh machines today. 
+
+X86 是一种非常流行的用于家庭的架构。  
+
+Very popular architecture used in home. 
+
+然后它（Linux）被移植到许多其他平台。  
+
+It was then ported to many other platforms. 
+
+典型的例子有互联网上的服务器，以及现在非常成功的云。  
+
+These are typically servers that are out in the Internet, in the Cloud today.  Very successful. 
+
+Linux 也用在安卓系统中。  
+
+It's also used in Android. 
+
+安卓是谷歌的智能手机，它至少占据了一半的智能手机市场，使用的是 Linux 。  
+
+Android, which is google smartphone, which has at least half of the smartphone market, uses Linux. 
+
+chromebook，从谷歌那里再次流行起来。  
+
+Chromebooks, which had become very popular again from Google. 
 
 他们有一个使用 Linux 的 Chrome 操作系统。  They have a Chrome OS that uses Linux. 
 
-许多嵌入式系统也运行在 Linux 之上。  Many embedded systems also run Linux. 
+许多嵌入式系统也运行在 Linux 之上。  
 
-大约 90% 的云基础设施是由 Linux 提供支持的。  About 90 percent of all the Cloud Infrastructure is powered by Linux. 
+Many embedded systems also run Linux. 
 
-Linux 就在那里，非常流行，对我们的社会非常重要。  Linux is out there, very popular and very important to our society. 
+大约 90% 的云基础设施是由 Linux 提供支持的。  
+
+About 90 percent of all the Cloud Infrastructure is powered by Linux. 
+
+Linux 就在那里，非常流行，对我们的社会非常重要。  
+
+Linux is out there, very popular and very important to our society. 
 
 让我们回过头来思考一下这些嵌入式系统。  Let's take a step back and think about those embedded systems. 
 
@@ -207,9 +239,13 @@ To think about the precursors to Linux, Unix was developed in 1969 by Bell Labs.
 
 贝尔实验室开始将 Unix 作为专有产品销售。  Bell Labs began selling Unix as a proprietary product. 
 
-那时 GNU 项目启动了。  At that time that the GNU project started up. 
+那时 GNU 项目启动了。  
 
-GNU 的目标是创建一个完全由自由软件组成的完整的 Unix 兼容软件系统。  The goal of GNU was creating a complete Unix compatible software system composed of entirely free software. 
+At that time that the GNU project started up. 
+
+GNU 的目标是创建一个完全由自由软件组成的完整的 Unix 兼容软件系统。  
+
+The goal of GNU was creating a complete Unix compatible software system composed of entirely free software. 
 
 这并不一定意味着金钱上的免费，而是使用上的免费。  
 

@@ -1,36 +1,38 @@
 # Linux Command Line
 
-欢迎回到Linux操作系统。 
+## 视频：Linux Command Line
+
+欢迎回到 Linux 操作系统。 
 
 Welcome back to the Linux operating system. 
 
-在本模块的最后一课中，我们将讨论Linux的命令行。  
+在本模块的最后一课中，我们将讨论 Linux 的命令行。  
 
 In this last lesson of this module, we're going to think about the Linux command line. 
 
-现在，在本课程的后面，你将学习越来越多的命令。  
+从现在开始，你将会在本课程中学习越来越多的命令。  
 
 Now, later on throughout this course, you're going to learn more and more commands. 
 
-我们来尝一尝。  
+此处我们仅是浅尝辄止。
 
 We're just going to get a little taste here.
 
 ---
 
-Linux桌面有一个图形用户界面，我们称之为GUI，但大多数安装使用命令行。 
+Linux 桌面有一个图形用户界面，我们称之为 GUI，但大多数安装使用命令行进行。
 
-The Linux desktop has a graphical user interface, we called it a GUI, but most installations use the command line. 
+The Linux desktop has a **graphical user interface**, we called it a GUI, but most installations use the command line. 
 
-我们在之前的课上讲过90%的云是Linux，大多数时候，我们称之为SSH'ing，你得到一个终端会话并使用云端服务器的命令行因为这比在云端显示图形用户界面要快。  
+我们在之前的课上讲过 90% 的云是基于 Linux 的，大多数时候，我们称之为 **SSH'ing**，你会得到一个终端会话并使用云端服务器的命令行，因为这比在云端显示图形用户界面要快。  
 
 We talked earlier in an earlier lesson that 90 percent of the cloud is Linux, and most of the time, what we call SSH'ing, you're getting a terminal session and using the command line of a server that's out in the cloud because that's faster than trying to display a graphical user interface across the cloud. 
 
-shell为您提供了一个到Unix系统的接口，它是不同的shell，您可以选择自己的shell，但Bourne shell是标准的shell，当它等待使用Bourne shell命令时，您将得到一个美元符号字符作为提示符。  
+shell 为您提供了一个访问 Unix 系统的接口，有许多不同的 shell，您可以选择自己的shell，但标准的 shell 是 Bourne shell，当使用 Bourne shell 等待某个命令时，您将得到一个美元字符作为提示符。  
 
 A shell provides you with an interface to the Unix system, and it's different shells, you can choose your own shell, but the Bourne shell is the standard one, and you'll get a dollar sign character as the prompt when it's waiting for a command with the Bourne shell. 
 
-一些常用命令，PWD会返回当前工作目录的路径。  
+一些常用命令，**PWD** 会返回当前工作目录的路径。  
 
 Some common commands, PWD is going to return the path of the current working directory. 
 
@@ -38,15 +40,15 @@ Some common commands, PWD is going to return the path of the current working dir
 
 You see that in the screen image. 
 
-你会在屏幕图像中看到，我做了一个PWD，它显示了 /home/aspen，那是我当时所在的目录。  
+你会在屏幕图像中看到，我输入了一个 PWD 命令，它显示了 /home/aspen，那是我此时所在的目录。  
 
 You'll see in the screen image, I did a PWD and it shows home aspen, that's the directory I'm in at the time. 
 
-Cd改变目录，有不同的方法可以做到这一点。 
+`Cd` 命令可以改变目录，但是也有不同的方法可以做到这一点。 
 
  Cd changes the directory, and there's different ways to do it. 
 
-所以你可以cd ..  向上移动一个目录。  
+所以你可以 `cd ..`  向上移动一个目录。  
 
 So you can cd..  to move one directory up. 
 
@@ -54,25 +56,25 @@ So you can cd..  to move one directory up.
 
 Directories in the file system are hierarchical, we'll talk more about that later. 
 
-但是在示例截图中有 home aspen，如果我做cd..  
+但是在示例截图中有 /home/aspen，如果我输入 `cd..`  
 
 But in the example in the screenshots has home aspen, if I do a cd.. 
 
-我回到家。  
+那么我将会回到 home 目录。  
 
 I go back to home.
 
 ---
 
-如果只输入cd，将转到主目录或用户的主文件夹，并使用连字符cd移动到前一个目录。 
+如果只输入 cd，将转到主目录或用户的主文件夹。此外，使用 cd ＋连字符会移动到之前所在的目录。 
 
 If you type just the cd on its own, you'll go to the home directory or the home folder for the user, and cd with a hyphen to move to your previous directory. 
 
-Ls 允许您查看目录的内容，并且有几个开关。  
+`Ls` 允许您查看目录的内容，同时该命令还有几个选项。  
 
 Ls lets you view the contents of a directory, and there's several switches. 
 
-ls -R 会列出子目录中的所有文件，ls -a会显示隐藏的文件。  
+`ls -R` 会列出子目录中的所有文件，`ls -a` 会显示隐藏的文件。  
 
 There's ls -R will list all the files in the sub-directories as well, ls -a will show hidden files. 
 
@@ -80,13 +82,13 @@ There's ls -R will list all the files in the sub-directories as well, ls -a will
 
 Hidden files are files just like any other files, but they don't show up by default. 
 
-Ls -al 将列出文件和目录的详细信息，如权限大小，所有者等。  
+`Ls -al` 将列出文件和目录的详细信息，如权限大小，所有者等。  
 
 Ls -al will list the files and directories with detailed information like the permission size, owner, etc.
 
 ---
 
-cat命令在标准输出中列出文件的内容， 
+`cat` 命令在标准输出中列出文件的内容， 
 
 The cat command lists the contents of a file on standard output,
 
@@ -96,11 +98,11 @@ The cat command lists the contents of a file on standard output,
 
 and we're going to learn a lot about standard output and redirecting standard output. 
 
-但你会看到一个例子，我们说cat，我们用大于符号重定向到 filename，会创建一个新文件，或者 cat filename 1, filename，空格，filename 2，重定向到 filename 3 会把两个文件连接到这个新文件名。  
+此处给出一个例子，比如说 `cat`，我们用大于符号 > 重定向到 filename，会创建一个新文件，或者 cat filename 1, filename，空格，filename 2，重定向到 filename 3 会把两个文件连接到这个新文件名。  
 
 But you'll see an example here where we say cat, and we redirect with the greater than symbol to filename, is going to create a new file, or cat filename 1, filename2, space, redirect to filename 3 is going to join the two files to this new filename. 
 
-cp命令会复制文件，你们面前的屏幕截图中有个例子我复制了一个文件my.txt，它应该在当前目录中，我把它复制到home 2目录中。  
+`cp` 命令会复制文件，你面前的屏幕截图中有个例子，我复制了一个名为 my.txt 的文件，它应该在当前目录中，我将它复制到了 home 2 目录中。  
 
 The cp command is going to copy files, you'll see an example in the screenshot in front of you where I'm just copying a file called my.txt, that's got to be in the current directory, and I'm copying it to the directory home two. 
 
@@ -110,9 +112,11 @@ Mv is going to move or rename files, make directory is going to create a new dir
 
 我将做一些例子，你将有一个可以在实验室中使用的Linux终端。  I'll do some examples, and you'll have a Linux terminal that you can play with in the lab. 
 
-这里回顾一下，PWD命令将显示当前目录，ls命令将列出目录的内容，而cat命令将列出文件的内容。  But just to review here, the PWD command will show you the current directory, the ls command will list the contents of a directory, and the cat command will list the contents of a file. 
+这里回顾一下，PWD 命令将显示当前目录，ls命令将列出目录的内容，而cat命令将列出文件的内容。  But just to review here, the PWD command will show you the current directory, the ls command will list the contents of a directory, and the cat command will list the contents of a file. 
 
 实验室见。  See you in the lab.
+
+## 阅读材料：Linux Command Line
 
 ## Linux Command Line-Reading
 

@@ -1,6 +1,22 @@
 
 
-- 地址：https://www.coursera.org/learn/programming-fundamentals/home/week/1
+# 第 1 周
+
+## Introduction
+
+该模块介绍了一个用于解决任何编程问题的强大方法——七步法。 
+
+This module introduces a powerful process for solving any programming problem—the Seven Steps. 
+
+你将学习如何系统地处理编程问题，从而制定出具体而正确的算法。  
+
+You will learn how to approach a programming problem methodically, so you can formulate an algorithm that is specific and correct. 
+
+通过示例学习数字序列和图形模式，你将掌握算法开发的技巧。  
+
+You will work through examples with sequences of numbers and graphical patterns to develop the skill of algorithm development.
+
+地址：https://www.coursera.org/learn/programming-fundamentals/home/week/1
 
 ## The First Four Steps
 
@@ -26,15 +42,23 @@ Sometimes, we may find steps which are almost repetitive, in which case we may n
 
 In our  3^4  example, our multiplication steps are almost repetitive—both multiply  x  by "something," but that "something" changes (3 then 9 then 27).  
 
-更详细地检查这些步骤，我们将看到我们相乘的“某物”是前一步的答案。  Examining the steps in more detail, we will see that the "something" we multiply is the answer from the previous step. 
+更详细地检查这些步骤，我们将看到我们相乘的“某物”是前一步的答案。  
 
- 然后，我们可以给它一个名字(和一个初始值)，使所有这些步骤相同:  We can then give it a name (and an initial value) to  make all of these steps the same:
+Examining the steps in more detail, we will see that the "something" we multiply is the answer from the previous step. 
+
+ 然后，我们可以给它一个名字(和一个初始值)，使所有这些步骤相同:  
+
+We can then give it a name (and an initial value) to  make all of these steps the same:
 
 ![image-20230927142746286](images/image-20230927142746286.png)
 
-现在，同样的步骤重复了三次。 Now, we have the same exact step repeated three times.  
+现在，同样的步骤重复了三次。
 
-现在我们可以考虑这个步骤作为x和/或y的函数重复了多少次。我们必须小心，不要轻易得出结论，它重复了x次，因为x = 3——在这种情况下，这只是一个巧合。  We can now contemplate how many times this step repeats as a function of  x  and/or  y.  We must be careful not to jump to the conclusion that it repeats  x  times because  x = 3—that is just a coincidence in this case.  
+ Now, we have the same exact step repeated three times.  
+
+现在我们可以考虑这个步骤作为x和/或y的函数重复了多少次。我们必须小心，不要轻易得出结论，它重复了x次，因为x = 3——在这种情况下，这只是一个巧合。  
+
+We can now contemplate how many times this step repeats as a function of  x  and/or  y.  We must be careful not to jump to the conclusion that it repeats  x  times because  x = 3—that is just a coincidence in this case.  
 
 在这种情况下，它重复y - 1次。  In this case, it repeats  y - 1  times.  
 
