@@ -38,4 +38,10 @@ CS50P **基本**学完，但是还有最后一个项目我没有做，因为我�
 
 - 收罗一些用 python 讲设计模式的书籍
 
+## SQL
+
+### MySQL
+
+- [MySQL 必知必会](https://zh.1lib.sk/s/MySQL%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A?order=bestmatch)
+
 
