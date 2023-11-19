@@ -38,6 +38,13 @@ CS50P **基本**学完，但是还有最后一个项目我没有做，因为我�
 
 - 收罗一些用 python 讲设计模式的书籍
 
+### python 测试
+
+记录几个学习 python 单元测试、集成测试的链接。
+
+1. [廖雪峰老师-unittest](https://www.liaoxuefeng.com/wiki/1016959663602400/1017604210683936)
+2. 后续了解到似乎 pytest 更加灵活、适用面更广，所以还是选择 pytest 吧，尽管 unittest 是标准库。
+
 ## SQL
 
 ### MySQL
